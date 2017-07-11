@@ -1,0 +1,21 @@
+<ion-view view-title="الحقائق والمفاهيم">
+    <ion-content>
+        <ion-list class="facts_list">
+            <ion-item ng-repeat="fact in facts" href="#/app/playlists/{{fact.id}}">
+                <div class="facts">
+                    <div class="facts_img" style="background:url({{fact.img}})"></div>
+                    <div class="short_desc secBgColor">
+                        <p>النوع: {{fact.type}}</p>
+                    </div>
+                    <div class="img_description text-center">
+                        <p class="cards_name mainTextColor">{{fact.name}}</p>
+                        <p class="whiteColor">المكان: {{fact.place}}</p>
+                    </div>
+                    <div class="description">
+                        <p class="content_description">{{fact.description}}</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

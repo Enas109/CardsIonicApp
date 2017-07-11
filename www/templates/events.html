@@ -1,0 +1,21 @@
+<ion-view view-title="الأحداث">
+  <ion-content>
+    <ion-list class="facts_list">
+      <ion-item ng-repeat="event in events" href="#/app/playlists/{{event.id}}">
+        <div class="facts">
+          <div class="facts_img" style="background:url({{event.img}})"></div>
+          <div class="short_desc secBgColor">
+            <p>النوع: {{event.type}}</p>
+          </div>
+          <div class="img_description text-center">
+            <p class="cards_name mainTextColor">{{event.name}}</p>
+            <p class="whiteColor">المكان: {{event.country}}</p>
+          </div>
+          <div class="description">
+            <p class="content_description">{{event.description}}</p>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

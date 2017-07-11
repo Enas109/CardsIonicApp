@@ -1,0 +1,22 @@
+<ion-view view-title="الشخصيات">
+  <ion-content>
+    <ion-list class="facts_list">
+      <ion-item ng-repeat="char in chars" href="#/app/playlists/{{char.id}}">
+        <div class="facts">
+          <div class="facts_img" style="background:url({{char.img}})"></div>
+          <div class="short_desc secBgColor">
+            <p>تاريخ الميلاد: {{char.birthDate}}</p>
+            <p>الجنسية: {{char.nationality}}</p>
+          </div>
+          <div class="img_description text-center">
+            <p class="cards_name mainTextColor">{{char.name}}</p>
+            <p class="whiteColor">الوظيفة: {{char.job}}</p>
+          </div>
+          <div class="description">
+            <p class="content_description">{{char.description}}</p>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

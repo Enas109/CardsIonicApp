@@ -1,0 +1,169 @@
+/* Empty. Add your own CSS if you like */
+*, span, input, button{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl
+}
+.bar .title.title-left {
+    text-align: center;
+}
+.mainTextColor,
+.bar .button.back-button, .bar button.back-button {
+    color: #efb632 !important
+}
+.mainBgColor {
+    background: #010416 !important
+}
+.secBgColor {
+    background: #efb632 !important
+}
+.whiteColor {
+    color: white !important
+}
+.item p {
+    color: #000;
+}
+.bar .button.back-button, .bar button.back-button {
+    position: absolute;
+    left: 0px;
+    direction: ltr;
+    margin-left: 10px
+}
+ion-content {
+    margin:0 !important;
+}
+/*********************** Quires ********************/
+@media screen and (min-device-width: 300px)
+    and (max-device-width: 1824px)
+    and (orientation : landscape) {
+
+    .facts_img {
+        height:50vh !important;
+    }
+
+}
+/******************** Start login ******************/
+.loginContent {
+    padding:24px 24px 0;
+}
+.loginBg {
+    background: url("../img/login-bg.jpg") no-repeat 100% 100%;
+    background-size: cover;
+    box-shadow: inset 0 0 200px 10000px rgba(0,0,0,0.7) !important;
+}
+/*.logo {*/
+    /*width:100%;*/
+    /*height:250px;*/
+/*}*/
+.logo img {
+    margin: 0 auto;
+    display: block;
+}
+.loginBg .list, .registerBtn{
+    margin: 0;
+}
+.loginBg .item.item-input:last-child {
+    padding-bottom: 0;
+}
+.loginBg .item.item-input {
+    background: transparent !important;
+    margin-bottom: 14px;
+    -webkit-border-radius:18px;
+    -moz-border-radius:18px;
+    border-radius:18px;
+    border: 1px solid;
+}
+.loginBg input[type="text"],
+.loginBg input[type="password"],
+.loginBg input[type="email"] {
+    text-align: center;
+    color: white
+}
+*::-webkit-input-placeholder {
+    color: #fff !important;
+}
+*:-moz-placeholder {
+    color: #fff !important;
+}
+*:-ms-input-placeholder { /* IE10+ */
+    color: #fff !important;
+}
+.loginBtns.row {
+    padding:0;
+}
+.loginBtns.row .col-50:first-child {
+    padding-right: 0;
+}
+.loginBtns.row .col-50:last-child {
+    padding-left: 0;
+}
+.loginBtns .button-full {
+    -webkit-border-radius:18px;
+    -moz-border-radius:18px;
+    border-radius:18px;
+    border:none;
+}
+/******************** Start Menu *******************/
+.menuItems.item-icon-right .icon {
+    font-size: 24px
+}
+.item-complex.item-icon-right.menuItems .item-content {
+    background: #010416;
+    color: white
+}
+.item-complex.item-icon-right.menuItems.item:first-child {
+    border-top:none !important;
+}
+.item-complex.item-icon-right.menuItems.item {
+    border-color: #444 !important
+}
+/******************* Start Facts ******************/
+.facts_list .item {
+    border:none;
+    width:50%;
+    float: right;
+    padding:6px;
+    padding-bottom: 0;
+}
+.facts_list .item:nth-child(2n) {
+    padding-right: 3px;
+}
+.facts_list .item:nth-child(2n+1) {
+    padding-left: 3px;
+}
+.facts_list .item-content {
+    padding:3px;
+}
+.facts {
+    border:2px solid #efcc82;
+    position: relative;
+}
+.facts_img {
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    height: 20vh;
+    margin:0 auto;
+}
+.img_description {
+    position: absolute;
+    top:0;
+    width: 100%;
+    padding: 2%;
+    background: rgba(0,0,0,0.6);
+}
+.short_desc {
+    padding:10px;
+}
+.cards_name {
+    font-weight:bold;
+    font-size: 16px !important;
+}
+.content_description {
+    white-space: normal !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    height: 110px !important;
+    width:100%;
+    padding:10px;
+    margin-bottom: 12px !important
+}
