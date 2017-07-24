@@ -1,11 +1,11 @@
 
 {
-  "name": "My Ionic App",
-  "short_name": "My Ionic App",
+  "name": "Info Cards",
+  "short_name": "Info Cards",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "icon.png",
+    "src": "logo.png",
     "sizes": "512x512",
     "type": "image/png"
   }]

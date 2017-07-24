@@ -249,6 +249,10 @@ $rootScope.details = [
       url: '/register',
       templateUrl: 'templates/register.html'
   })
+  .state('home', {
+      url: '/home',
+      templateUrl: 'templates/home.html'
+  })
   .state('app.facts', {
     url: '/facts',
     views: {

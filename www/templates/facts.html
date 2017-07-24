@@ -1,21 +1,27 @@
 <ion-view view-title="الحقائق والمفاهيم">
-    <ion-content>
-        <ion-list class="facts_list">
-            <ion-item ng-repeat="fact in facts" href="#/app/playlists/{{fact.id}}">
-                <div class="facts">
-                    <div class="facts_img" style="background:url({{fact.img}})"></div>
-                    <div class="short_desc secBgColor">
-                        <p>النوع: {{fact.type}}</p>
-                    </div>
-                    <div class="img_description text-center">
-                        <p class="cards_name mainTextColor">{{fact.name}}</p>
-                        <p class="whiteColor">المكان: {{fact.place}}</p>
-                    </div>
-                    <div class="description">
-                        <p class="content_description">{{fact.description}}</p>
-                    </div>
+<div class="bar bar-subheader item-input-inset search mainBgColor">
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon mainTextColor"></i>
+        <input type="search" placeholder="البحث" ng-model="searchText">
+    </label>
+</div>
+<ion-content class="has-subheader">
+    <ion-list class="facts_list">
+        <ion-item ng-repeat="fact in facts | filter:searchText" href="#/app/playlists/{{fact.id}}">
+            <div class="facts">
+                <div class="facts_img" style="background:url({{fact.img}})"></div>
+                <div class="short_desc secBgColor">
+                    <p>النوع: {{fact.type}}</p>
                 </div>
-            </ion-item>
-        </ion-list>
-    </ion-content>
+                <div class="img_description text-center">
+                    <p class="cards_name mainTextColor">{{fact.name}}</p>
+                    <p class="whiteColor">المكان: {{fact.place}}</p>
+                </div>
+                <div class="description">
+                    <p class="content_description">{{fact.description}}</p>
+                </div>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
 </ion-view>
