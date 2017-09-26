@@ -1,8 +1,9 @@
 {
   "name": "infoCardApp",
-  "app_id": "",
+  "app_id": "b41debd0",
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*"
-  ]
+  ],
+  "integrations": {}
 }
