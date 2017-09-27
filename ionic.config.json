@@ -1,6 +1,6 @@
 {
   "name": "infoCardApp",
-  "app_id": "b41debd0",
+  "app_id": "02f19e4b",
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*",
@@ -8,5 +8,7 @@
     "!www/lib/**/*",
     "!www/**/*.map"
   ],
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
