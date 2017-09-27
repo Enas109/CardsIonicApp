@@ -6,8 +6,10 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers'])
 
-.run(function($ionicPlatform, $rootScope) {
-
+.run(function($ionicPlatform, $rootScope, $location) {
+    $rootScope.goto=function(url){
+        $location.path(url)
+    }
 /*********** Start sideMenu ***************/
 $rootScope.sideMenus = [
     {
