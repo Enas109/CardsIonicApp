@@ -1,5 +1,5 @@
 /* Empty. Add your own CSS if you like */
-*, span, input, button, p, h1, h2, h3, h4, h5, h6{
+ion-view, span, input, button, p, h1, h2, h3, h4, h5, h6{
     font-family: 'Cairo', sans-serif;
     direction: rtl
 }
