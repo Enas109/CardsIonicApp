@@ -1,6 +1,6 @@
 /* Empty. Add your own CSS if you like */
 ion-view, span, input, button, p, h1, h2, h3, h4, h5, h6,
-.homeList, .sideMenu, .title.title-left {
+.homeList, .sideMenu, .header-item, .img_description p {
     font-family: 'Cairo', sans-serif;
     direction: rtl;
     letter-spacing: normal
