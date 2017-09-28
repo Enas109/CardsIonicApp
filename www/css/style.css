@@ -3,7 +3,7 @@ ion-view, span, input, button, p, h1, h2, h3, h4, h5, h6,
 .homeList, .sideMenu, .header-item, .img_description p, a {
     font-family: 'Cairo', sans-serif;
     direction: rtl;
-    letter-spacing: normal
+    letter-spacing: 0
 }
 .bar .title.title-left {
     text-align: center;
